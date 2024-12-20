@@ -11,6 +11,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <!-- font awesome cdn link added here -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- color customize configuration -->
     <script>
         tailwind.config = {
@@ -18,7 +20,7 @@
             extend: {
               colors: {
                 clifford: '#da373d',
-                "btn-primary": '#da373d',
+                "btn-primary": '#ff4240',
               }
             }
           }
@@ -27,13 +29,58 @@
 </head>
 <body>
     <header>
-
+        <!-- navbar start here -->
+        <nav class="mx-1 md:mx-20 my-5">
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                  <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="h-5 w-5"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M4 6h16M4 12h8m-8 6h16" />
+                      </svg>
+                    </div>
+                    <ul
+                      tabindex="0"
+                      class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-72 p-2 shadow capitalize ">
+                      <li><a class="text-btn-primary text-2xl">home</a></li>
+                      <li><a class="text-2xl">about</a></li>
+                      <li><a class="text-2xl">pages</a></li>
+                      <li><a class="text-2xl">blog</a></li>
+                      <li><a class="text-2xl">contact</a></li>
+                    </ul>
+                  </div>
+                  <a class="btn btn-ghost text-3xl md:text-4xl font-extrabold">Hockey <sup class="text-xl text-btn-primary">,</sup> s</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                  <ul class="menu menu-horizontal px-1 text-xl capitalize">
+                    <li><a class="text-btn-primary">home</a></li>
+                      <li><a>about</a></li>
+                      <li><a>pages</a></li>
+                      <li><a>blog</a></li>
+                      <li><a>contact</a></li>
+                  </ul>
+                </div>
+                <div class="navbar-end flex gap-5">
+                    <i class="fa-solid fa-magnifying-glass hidden md:block"></i>
+                  <a class="btn bg-btn-primary capitalize text-white text-xl">get ticket</a>
+                </div>
+              </div>
+        </nav>
     </header>
     <main>
 
     </main>
     <footer>
-        
+
     </footer>
     
 </body>
